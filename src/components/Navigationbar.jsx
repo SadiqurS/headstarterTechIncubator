@@ -23,13 +23,13 @@ const Navigationbar = () => {
             </IconButton>
             <Box sx={{ flexGrow: 1 }} />
             <Stack direction="row" spacing={2}>
-              <Button variant="text" color="inherit">
-                placeholder
+              <Button href="/home" variant="text" color="inherit">
+                Home
               </Button>
-              <Button variant="text" color="inherit">
-                placeholder
+              <Button variant="text" href="/tasks" color="inherit">
+                View Tasks
               </Button>
-              <Button variant="contained" color="success">
+              <Button href="/signup" variant="contained" color="success">
                 Signup
               </Button>
             </Stack>
