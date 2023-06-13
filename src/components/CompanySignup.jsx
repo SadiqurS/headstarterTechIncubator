@@ -5,12 +5,17 @@ const CompanySignup = () => {
   const companyNameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
+  const { signup } = useAuth()
+  
+
+    signup(emailRef.current.value, passwordRef.current.value)
+  }
 
   return (
     <>
       <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Sign UP</h2>
+          <h2 className="text-center mb-4">Sign Up</h2>
           <Form>
             <Form.Group id="company-name" className="mt-4">
               <Form.Label>Company Name</Form.Label>
@@ -34,7 +39,11 @@ const CompanySignup = () => {
         Already have an account? Log In
       </div>
     </>
+    function handleSubmit(e) {
+      e.preventDefault()
   );
+
+  
 };
 
 export default CompanySignup;

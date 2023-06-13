@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import CompanySignup from "./CompanySignup";
+import { useAuth } from '../contexts/AuthContext'
 
 const SignupPage = () => {
 
