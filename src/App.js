@@ -3,6 +3,8 @@ import SignupPage from "./components/SignupPage";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Landing from "./components/Landing";
+import Stylesheet from "./Stylesheet";
+
 function App() {
   let component;
   switch (window.location.pathname) {
